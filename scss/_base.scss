@@ -25,4 +25,10 @@ body {
     text-rendering: optimizeLegibility;
 
     box-sizing: border-box;
+    cursor: default;
+}
+
+::selection {
+    background-color: $color-blue;
+    color: #fff;
 }
