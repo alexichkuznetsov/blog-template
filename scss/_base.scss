@@ -1,0 +1,28 @@
+// Import from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700');
+
+
+// Basic reset
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    color: #000;
+    text-rendering: optimizeLegibility;
+
+    box-sizing: border-box;
+}

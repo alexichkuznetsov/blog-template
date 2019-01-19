@@ -1,0 +1,205 @@
+@import 'base';
+@import 'variables';
+@import 'utilities';
+
+
+
+// Components
+
+// Main header
+.main-header {
+    height: 7rem;
+    background-image: linear-gradient(to right, $color-blue, $color-blue 20%, #fff 20%, #fff);
+
+    &__container {
+        height: 100%;
+        max-width: 120rem;
+        margin: 0 auto;
+
+        display: flex;
+    }
+
+    &__logo {
+        flex: 0 0 18rem;
+        background-color: $color-blue;
+
+        &:link,
+        &:visited {
+            font-size: 2.4rem;
+            line-height: 7rem;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    &__form {
+        flex: 0 0 6rem;
+    }
+
+    &__nav {
+        flex: 1;
+
+        display: flex;
+    }
+
+
+}
+
+// Search form
+.search-form {
+    position: relative;
+
+
+    &__group {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        background-color: $color-grey-1;
+        transition: width .2s ease;
+    }
+
+    &__input {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0 2.4rem;
+
+        outline: none;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+
+        font: inherit;
+        font-size: 1.8rem;
+        color: transparent;
+
+        z-index: 10;
+    }
+
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-top: -1.2rem;
+        margin-right: -1.2rem;
+
+        z-index: 1;
+
+        transition: fill .2s ease;
+        fill: $color-grey-4;
+    }
+
+    &--focus &__group {
+        width: 36rem;
+    }
+
+    &--focus &__input {
+        padding-right: 5rem;
+        color: inherit;
+    }
+
+    &--focus &__icon {
+        right: 2rem;
+        margin-right: 0;
+
+        fill: darken($color-grey-4, 20%);
+    }
+
+}
+
+// Navigation list
+.nav-list {
+    list-style: none;
+    
+    display: flex;
+
+    &--sub {
+        margin-right: auto;
+    }
+
+    &--sub &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-2;
+        }
+
+        &:hover {
+            color: darken($color-grey-2, 20%);
+        }
+    }
+
+    &--main &__link {
+        &:link,
+        &:visited {
+            color: $color-blue;
+            border-bottom: 3px solid transparent;
+        }
+
+        &:hover {
+            border-bottom: 3px solid $color-blue;
+        }
+
+        &--active {
+            border-bottom: 3px solid $color-blue !important;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        padding: 2.6rem 2rem;
+
+        &:link,
+        &:visited {
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            text-decoration: none;
+            transition: color .2s ease,
+                        border-bottom .2s ease;
+        }
+    }
+}
+
+// Buttons
+.expand-btn {
+    width: 5rem;
+
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+
+    position: relative;
+
+    &__dot {
+        display: block;
+
+        width: .6rem;
+        height: .6rem;
+        
+        border-radius: 50%;
+        background-color: $color-blue;
+
+        position: absolute;
+        top: 50%;
+        margin-top: -.3rem;
+
+        &--1 {
+            left: 1.2rem;
+        }
+
+        &--2 {
+            left: 2.2rem;
+        }
+
+        &--3 {
+            right: 1.2rem;
+        }
+    }
+}

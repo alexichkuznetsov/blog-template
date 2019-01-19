@@ -1,0 +1,14 @@
+{
+  "name": "blog-template",
+  "version": "1.0.0",
+  "description": "Template for a blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass scss/main.scss assets/css/main.css -w"
+  },
+  "author": "Aleksey",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
