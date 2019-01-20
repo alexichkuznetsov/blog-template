@@ -15,3 +15,10 @@ $color-grey-4: #acacac;
 
 // Gaps
 $row-gap: 5rem;
+
+// Breakpoints for media queries
+$bp-largest: 75em; // 1200px
+$bp-large: 58.75em; // 940px
+$bp-medium: 46.25em; // 740px
+$bp-small: 31.25em; // 500px
+$bp-smallest: 25em; // 400px

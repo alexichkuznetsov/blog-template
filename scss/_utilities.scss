@@ -8,6 +8,11 @@
     &--h100 {
         height: 100%;
     }
+
+    @media only screen and (max-width: $bp-largest) {
+        width: 100%;
+        padding: 0 3rem;
+    }
 }
 
 .u-bg-red { background-color: $color-red; }

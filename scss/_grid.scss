@@ -2,12 +2,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: $bp-medium) {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
     &:not(:last-child) {
         margin-bottom: $row-gap;
     }
 
     [class^=col] {
         flex: 0 0 100%;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: auto;
+            width: 90%;
+            
+            &:not(:last-child) {
+                margin-bottom: $row-gap;
+            }
+        }
     }
 
     .col-1-of-2 {

@@ -14,7 +14,7 @@
     <body>
         <!-- Main header -->
         <header class="main-header">
-            <div class="main-header__container">
+            <div class="main-header__container u-container">
                 <a href="#" class="main-header__logo">
                     Blog <span class="u-text-bold">template</span>
                 </a>
@@ -28,7 +28,13 @@
                     </div>
                 </form>
 
-                <nav class="main-header__nav">
+                <button class="main-header__toggle-btn toggle-btn" id="nav-toggle">
+                    <span class="toggle-btn__bar toggle-btn__bar--1"></span>
+                    <span class="toggle-btn__bar toggle-btn__bar--2"></span>
+                    <span class="toggle-btn__bar toggle-btn__bar--3"></span>
+                </button>
+
+                <nav class="main-header__nav" id="navbar">
                     <ul class="nav-list nav-list--sub">
                         <li class="nav-list__item">
                             <a href="#" class="nav-list__link">

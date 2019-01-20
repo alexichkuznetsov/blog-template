@@ -2,11 +2,11 @@
 var form = document.querySelector('#header-form');
 var inputField = form.querySelector('.search-form__input');
 
-inputField.addEventListener('focus', function(e) {
+inputField.addEventListener('focus', function() {
     form.classList.add('search-form--focus');
 });
 
-inputField.addEventListener('blur', function(e) {
+inputField.addEventListener('blur', function() {
     form.classList.remove('search-form--focus');
 });
 
@@ -64,3 +64,12 @@ Slider.prototype.init = function() {
 
 var s = new Slider(prevBtn, nextBtn, slides, viewport);
 s.init();
+
+// For nav toggle btn
+var toggleBtn = document.querySelector('#nav-toggle');
+var navBar = document.querySelector('#navbar');
+
+toggleBtn.addEventListener('click', function() {
+	toggleBtn.classList.toggle('toggle-btn--open');
+	navBar.classList.toggle('main-header__nav--open');
+});
