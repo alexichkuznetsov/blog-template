@@ -9,3 +9,13 @@
         height: 100%;
     }
 }
+
+.u-bg-red { background-color: $color-red; }
+.u-bg-dark { background-color: #000; }
+.u-bg-green { background-color: $color-green; }
+.u-bg-blue { background-color: $color-blue; }
+.u-bg-purple { background-color: $color-purple; }
+
+.u-lb {
+    @supports (filter: brightness()) { filter: brightness(80%); }
+}

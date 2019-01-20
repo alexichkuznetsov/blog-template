@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: $row-gap;
+    }
+
+    [class^=col] {
+        flex: 0 0 100%;
+    }
+
+    .col-1-of-2 {
+        flex: 0 0 48%;
+    }
+
+    .col-1-of-3 {
+        flex: 0 0 31%;
+    }
+}
